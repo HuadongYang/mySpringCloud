@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/account/account.iml" filepath="$PROJECT_DIR$/account/account.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/file/file.iml" filepath="$PROJECT_DIR$/framework/file/file.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/framework.iml" filepath="$PROJECT_DIR$/framework/framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/multy_module/multy_module.iml" filepath="$PROJECT_DIR$/multy_module/multy_module.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mySpringCloud.iml" filepath="$PROJECT_DIR$/.idea/mySpringCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/framework/mybatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/parent/parent.iml" filepath="$PROJECT_DIR$/framework/parent/parent.iml" />
     </modules>
   </component>

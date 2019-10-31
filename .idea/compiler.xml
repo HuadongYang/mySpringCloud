@@ -6,14 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="account" />
         <module name="discovery" />
+        <module name="file" />
         <module name="multy_module" />
+        <module name="mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="account" target="1.8" />
       <module name="discovery" target="1.8" />
+      <module name="file" target="1.8" />
       <module name="framework" target="1.8" />
       <module name="multy_module" target="1.5" />
+      <module name="mybatis" target="1.8" />
       <module name="parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>

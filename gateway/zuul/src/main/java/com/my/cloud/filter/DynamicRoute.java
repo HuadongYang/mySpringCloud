@@ -14,7 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Optional;
 
-public class ApiRouteFilter extends ZuulFilter {
+/**
+ * my必须要配置一下，因为zuul如果检测到serviceIds和yml文件里没有，请求直接返回
+ *
+ * localhost:8001/api/my/a路由到localhost:8001/api/v1/tools-service/gateway/test/heart
+ */
+public class DynamicRoute extends ZuulFilter {
 
     @Autowired
     private DiscoveryClient discoveryClient;
@@ -41,29 +46,13 @@ public class ApiRouteFilter extends ZuulFilter {
     @Override
     public Object run() throws ZuulException {
         RequestContext context = RequestContext.getCurrentContext();
-        HttpServletRequest request = context.getRequest();
-        HttpServletResponse response = context.getResponse();
 
-
-
-        //String uri = (String) context.get(Constants.REQUEST_URI_KEY);
-        String uri = request.getRequestURI();
         String currentServiceId = context.get("serviceId").toString();
         if (currentServiceId.startsWith("my")){
-            context.set(Constants.SERVICE_ID_KEY, "tools-service");
+            context.set(Constants.SERVICE_ID_KEY, "tools-service-v1");
             context.set(Constants.REQUEST_URI_KEY, "/gateway/test/heart");
-
         }
 
-        List<String> serviceList = discoveryClient.getServices();
-
-        Optional.ofNullable(serviceList).ifPresent(list->{
-            list.forEach(serviceId->{
-                String key = patternServiceRouteMapper.apply(serviceId);
-                if (uri.startsWith(key))
-                    context.set(Constants.SERVICE_ID_KEY, serviceId);
-            });
-        });
         return null;
     }
 }

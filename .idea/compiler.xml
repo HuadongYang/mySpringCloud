@@ -6,27 +6,51 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="account" />
+        <module name="router" />
         <module name="discovery" />
         <module name="file" />
+        <module name="tools-service" />
+        <module name="account" />
+        <module name="hystrix" />
+        <module name="email" />
+        <module name="sharding" />
         <module name="multy_module" />
-        <module name="mybatis" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="account" target="1.8" />
+      <module name="db" target="1.8" />
       <module name="discovery" target="1.8" />
+      <module name="email" target="1.8" />
       <module name="file" target="1.8" />
       <module name="framework" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="hystrix" target="1.5" />
       <module name="multy_module" target="1.5" />
       <module name="mybatis" target="1.8" />
       <module name="parent" target="1.8" />
+      <module name="router" target="1.8" />
+      <module name="service" target="1.8" />
+      <module name="sharding" target="1.8" />
+      <module name="tools-service" target="1.8" />
+      <module name="toolsservice" target="1.5" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account" options="-parameters" />
+      <module name="db" options="-parameters" />
       <module name="discovery" options="-parameters" />
+      <module name="email" options="-parameters" />
+      <module name="file" options="-parameters" />
+      <module name="mybatis" options="-parameters" />
       <module name="parent" options="-parameters" />
+      <module name="router" options="-parameters" />
+      <module name="sharding" options="-parameters" />
+      <module name="tools-service" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>

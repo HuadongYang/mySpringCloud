@@ -3,13 +3,21 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/account/account.iml" filepath="$PROJECT_DIR$/account/account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/db/db.iml" filepath="$PROJECT_DIR$/framework/db/db.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/email/email.iml" filepath="$PROJECT_DIR$/framework/email/email.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/file/file.iml" filepath="$PROJECT_DIR$/framework/file/file.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/framework.iml" filepath="$PROJECT_DIR$/framework/framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hystrix/hystrix.iml" filepath="$PROJECT_DIR$/hystrix/hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/multy_module/multy_module.iml" filepath="$PROJECT_DIR$/multy_module/multy_module.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mySpringCloud.iml" filepath="$PROJECT_DIR$/.idea/mySpringCloud.iml" />
-      <module fileurl="file://$PROJECT_DIR$/framework/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/framework/mybatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/parent/parent.iml" filepath="$PROJECT_DIR$/framework/parent/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/db/router/router.iml" filepath="$PROJECT_DIR$/framework/db/router/router.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/db/sharding/sharding.iml" filepath="$PROJECT_DIR$/framework/db/sharding/sharding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/tools-service/tools-service.iml" filepath="$PROJECT_DIR$/service/tools-service/tools-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/zuul/zuul.iml" filepath="$PROJECT_DIR$/gateway/zuul/zuul.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,34 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+#简单配置serviceId和path
+#zuul:
+#  routes:
+#    tools-service: /tools/**
+
+zuul:
+  prefix: /api
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+  routes:
+    baidu:
+      path: /bai/**
+      url: https://www.baidu.com
+    my:
+      path: /my/**
+      serviceId: my
+
+#ribbon:
+#  ReadTimeout: 60000
+#  ConnectTimeout: 60000
+

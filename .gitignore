@@ -20,3 +20,4 @@ rebel.xml
 logs
 out
 logdir
+.gitignore

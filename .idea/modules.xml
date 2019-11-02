@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/hystrix/hystrix.iml" filepath="$PROJECT_DIR$/hystrix/hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/multy_module/multy_module.iml" filepath="$PROJECT_DIR$/multy_module/multy_module.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mySpringCloud.iml" filepath="$PROJECT_DIR$/.idea/mySpringCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/db/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/framework/db/mybatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/parent/parent.iml" filepath="$PROJECT_DIR$/framework/parent/parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/db/router/router.iml" filepath="$PROJECT_DIR$/framework/db/router/router.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />

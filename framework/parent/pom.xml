@@ -13,6 +13,10 @@
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
+    <properties>
+        <fastjson.version>1.2.35</fastjson.version>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -28,6 +32,11 @@
                 <artifactId>lombok</artifactId>
                 <version>1.16.18</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

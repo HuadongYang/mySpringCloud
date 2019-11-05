@@ -6,4 +6,5 @@ package com.my.cloud.lambda;
  * @create: 2019-11-01 20:35
  **/
 public class StreamTest {
+
 }

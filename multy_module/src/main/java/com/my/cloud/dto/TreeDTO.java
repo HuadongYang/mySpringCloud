@@ -1,10 +1,10 @@
 package com.my.cloud.dto;
 
 import lombok.Data;
-
-import java.util.function.Function;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 public class TreeDTO<T> {
     String id;
     String name;
@@ -16,10 +16,11 @@ public class TreeDTO<T> {
     Integer orderNo;
     T value;
 
-    public static <T> void setIdFunction(TreeDTO treeDTO, T t,
-            Function<? super T, String> getId)
-    {
-        treeDTO.setId(getId.apply(t));
-    }
 
+    public TreeDTO(String id, String name, String parentId, Integer orderNo) {
+        this.id = id;
+        this.name = name;
+        this.parentId = parentId;
+        this.orderNo = orderNo;
+    }
 }

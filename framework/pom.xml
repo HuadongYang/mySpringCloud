@@ -19,6 +19,7 @@
         <module>file</module>
         <module>db</module>
         <module>email</module>
+        <module>swagger</module>
     </modules>
 
     <properties>

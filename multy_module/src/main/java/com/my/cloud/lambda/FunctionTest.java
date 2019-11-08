@@ -1,12 +1,13 @@
 package com.my.cloud.lambda;
 
+import com.my.cloud.dto.AttachmentDTO;
 import com.my.cloud.dto.TreeDTO;
-import com.my.cloud.dto.UserDTO;
 import org.junit.Test;
 
-import java.io.Serializable;
-import java.util.Comparator;
-import java.util.Objects;
+import java.math.BigInteger;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.function.Function;
 
 public class FunctionTest {
@@ -20,6 +21,24 @@ public class FunctionTest {
         treeDTO.setOrderNo(Integer.valueOf(getId.apply(treeDTO)));
     }
 
+
+    private <T> void addTreeDTOs(Set<TreeDTO> catalogs,
+                                 Map<BigInteger, List<AttachmentDTO>> attachmentMap,
+                                 List<T> list,
+                                 Function<? super T, BigInteger> getId,
+                                 Function<? super T, Object> getName,
+                                 Function<? super T, BigInteger> getParentId,
+                                 Function<? super T, Integer> getOrderNo,
+                                 String parentId) {
+        for (T t : list) {
+            TreeDTO treeDTO = new TreeDTO(String.valueOf(getId.apply(t)), String.valueOf(getName.apply(t)),
+                    getParentId == null ? String.valueOf(getParentId.apply(t)) : parentId, getOrderNo.apply(t));
+            if (attachmentMap != null)
+                treeDTO.setValue(attachmentMap.get(getId.apply(t)));
+            catalogs.add(treeDTO);
+        }
+    }
+
     @Test
     public void getIdFunctionTest(){
         TreeDTO treeDTO = new TreeDTO();
@@ -30,13 +49,6 @@ public class FunctionTest {
 
     @Test
     public void treeDTOTest(){
-        TreeDTO treeDTO = new TreeDTO();
-
-        UserDTO userDTO = new UserDTO();
-        userDTO.setUserId("123");
-
-        TreeDTO.setIdFunction(treeDTO, userDTO, UserDTO::getUserId);
-        System.out.println(treeDTO.getId());
     }
 
 

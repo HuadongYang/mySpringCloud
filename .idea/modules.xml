@@ -6,10 +6,11 @@
       <module fileurl="file://$PROJECT_DIR$/framework/db/db.iml" filepath="$PROJECT_DIR$/framework/db/db.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/email/email.iml" filepath="$PROJECT_DIR$/framework/email/email.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/feign/feign.iml" filepath="$PROJECT_DIR$/framework/feign/feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/file/file.iml" filepath="$PROJECT_DIR$/framework/file/file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/flink-service/flinkservice.iml" filepath="$PROJECT_DIR$/service/flink-service/flinkservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/framework.iml" filepath="$PROJECT_DIR$/framework/framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hystrix/hystrix.iml" filepath="$PROJECT_DIR$/hystrix/hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/multy_module/multy_module.iml" filepath="$PROJECT_DIR$/multy_module/multy_module.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mySpringCloud.iml" filepath="$PROJECT_DIR$/.idea/mySpringCloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/db/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/framework/db/mybatis/mybatis.iml" />

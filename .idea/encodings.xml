@@ -9,13 +9,16 @@
     <file url="file://$PROJECT_DIR$/framework/db/router" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/db/sharding" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/email" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework/feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/file" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework/hystrix" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/swagger" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/multy_module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/flink-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service/tools-service" charset="UTF-8" />
   </component>
 </project>

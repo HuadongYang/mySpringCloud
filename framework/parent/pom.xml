@@ -16,6 +16,8 @@
     <properties>
         <fastjson.version>1.2.35</fastjson.version>
         <swagger.version>2.7.0</swagger.version>
+        <flink.version>1.9.1</flink.version>
+        <scala.binary.version>2.11</scala.binary.version>
     </properties>
 
     <dependencyManagement>
@@ -54,6 +56,8 @@
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 

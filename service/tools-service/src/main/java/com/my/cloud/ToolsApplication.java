@@ -15,6 +15,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class ToolsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ToolsApplication.class, args);
+        new SpringApplication(ToolsApplication.class).run(args);
     }
 }

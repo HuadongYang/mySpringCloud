@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/framework/db/db.iml" filepath="$PROJECT_DIR$/framework/db/db.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/email/email.iml" filepath="$PROJECT_DIR$/framework/email/email.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/email-service/email-service.iml" filepath="$PROJECT_DIR$/service/email-service/email-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/feign/feign.iml" filepath="$PROJECT_DIR$/framework/feign/feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/file/file.iml" filepath="$PROJECT_DIR$/framework/file/file.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/flink-service/flink-service.iml" filepath="$PROJECT_DIR$/service/flink-service/flink-service.iml" />

@@ -19,17 +19,12 @@
         <flink.version>1.9.1</flink.version>
         <scala.binary.version>2.11</scala.binary.version>
         <jasypt.version>2.1.1</jasypt.version>
+        <spring.boot.version>2.1.0.RELEASE</spring.boot.version>
+        <xxl-job.version>2.1.0</xxl-job.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
 
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -58,12 +53,6 @@
                 <version>${swagger.version}</version>
             </dependency>
 
-            <!--email-->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-mail</artifactId>
-                <version>2.1.0.RELEASE</version>
-            </dependency>
 
             <!--jasypt配置文件加解密-->
             <dependency>
@@ -72,22 +61,20 @@
                 <version>${jasypt.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <scope>test</scope>
-            </dependency>
 
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
             </dependency>
 
-            <!-- Spring Boot 模板依赖 -->
+
+            <!-- quartz-job-core -->
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>${xxl-job.version}</version>
             </dependency>
+
 
         </dependencies>
     </dependencyManagement>

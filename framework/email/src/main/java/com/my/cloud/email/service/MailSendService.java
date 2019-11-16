@@ -22,7 +22,7 @@ public interface MailSendService {
      * @param cc      抄送地址
      * @throws MessagingException 邮件发送异常
      */
-    void sendHtmlMail(String to, String subject, String content, String... cc) throws MessagingException;
+    void sendHtmlMail(String to, String subject, String content, String... cc) throws MessagingException, javax.mail.MessagingException;
 
     /**
      * 发送带附件的邮件
@@ -47,6 +47,6 @@ public interface MailSendService {
      * @param cc      抄送地址
      * @throws MessagingException 邮件发送异常
      */
-    void sendResourceMail(String to, String subject, String content, String rscPath, String rscId, String... cc) throws MessagingException;
+    void sendResourceMail(String to, String subject, String content, String rscPath, String rscId, String... cc) throws MessagingException, javax.mail.MessagingException;
 
 }

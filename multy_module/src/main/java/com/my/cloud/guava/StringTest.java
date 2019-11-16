@@ -51,6 +51,7 @@ public class StringTest {
         Multimap<String, String> multimap = ArrayListMultimap.create();
         multimap.put("a", "b");
         multimap.put("a","c");
+
     }
 
     private void list() {

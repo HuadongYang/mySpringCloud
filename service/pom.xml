@@ -19,6 +19,7 @@
         <module>flink-service</module>
         <module>email-service</module>
         <module>spring-service</module>
+        <module>wechat-service</module>
     </modules>
 
 

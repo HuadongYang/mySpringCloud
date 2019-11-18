@@ -40,7 +40,7 @@ public class MailSendServiceImpl implements MailSendService {
     @Override
     public void sendHtmlMail(String to, String subject, String content, String... cc) throws MessagingException {
         MimeMessage message = mailSender.createMimeMessage();
-        MimeMessageHelper helper = new MimeMessageHelper(message, true, "GBK");
+        MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
         helper.setFrom(from);
         helper.setTo(to);
         helper.setSubject(subject);

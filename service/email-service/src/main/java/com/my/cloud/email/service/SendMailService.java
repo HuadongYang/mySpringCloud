@@ -61,7 +61,7 @@ public class SendMailService {
         context.setVariable("url", "https://xmgl-test.glodon.com/bim5d-tech/tech/tech-web/birthday/birth.html?access_token=cn-c91f1e97-c6b0-4501-a989-eb98eef1bb64");
 
         String emailTemplate = templateEngine.process("email/test", context);
-        mailSendService.sendHtmlMail("979078205@qq.com", "这是一封模板HTML邮件", emailTemplate);
+        mailSendService.sendHtmlMail("979078205@qq.com", "祝你永远快乐", emailTemplate);
     }
 
 }

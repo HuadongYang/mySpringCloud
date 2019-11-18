@@ -1,6 +1,7 @@
 package com.my.cloud.email.service;
 
-import com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException;
+
+import javax.mail.MessagingException;
 
 public interface MailSendService {
     /**

@@ -21,3 +21,4 @@ logs
 out
 logdir
 .gitignore
+.idea

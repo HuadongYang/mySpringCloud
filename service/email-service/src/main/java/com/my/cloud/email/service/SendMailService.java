@@ -1,12 +1,13 @@
 package com.my.cloud.email.service;
 
-import com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
+
+import javax.mail.MessagingException;
 
 /**
  * @description:
@@ -58,10 +59,10 @@ public class SendMailService {
         Context context = new Context();
         context.setVariable("project", "Spring Boot Demo");
         context.setVariable("author", "Yangkai.Shen");
-        context.setVariable("url", "https://xmgl-test.glodon.com/bim5d-tech/tech/tech-web/birthday/birth.html?access_token=cn-c91f1e97-c6b0-4501-a989-eb98eef1bb64");
+        context.setVariable("url", "https://bim5d-hunan.glodon.com/resources/birth/happy.html");
 
         String emailTemplate = templateEngine.process("email/test", context);
-        mailSendService.sendHtmlMail("979078205@qq.com", "祝你永远快乐", emailTemplate);
+        mailSendService.sendHtmlMail("979078205@qq.com", "祝你生日快乐", emailTemplate);
     }
 
 }

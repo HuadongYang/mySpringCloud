@@ -17,8 +17,8 @@ public class EmailPush {
     @Autowired
     SendMailService sendMailService;
 
-    @Scheduled(cron = "0/5 * * * * ?")
-    public void push() throws MessagingException, com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException {
+    @Scheduled(cron = "* 30 16 * * ?")
+    public void push() throws MessagingException, MessagingException {
         System.out.println("push");
         sendMailService.sendHtmlMail2();
     }

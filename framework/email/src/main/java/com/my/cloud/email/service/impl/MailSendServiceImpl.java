@@ -1,7 +1,6 @@
 package com.my.cloud.email.service.impl;
 
 import com.my.cloud.email.service.MailSendService;
-import com.sun.deploy.util.ArrayUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.SimpleMailMessage;

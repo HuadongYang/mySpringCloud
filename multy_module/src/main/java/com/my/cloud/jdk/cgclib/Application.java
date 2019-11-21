@@ -8,6 +8,8 @@ import org.assertj.core.internal.cglib.proxy.Enhancer;
  * 这个index当做一个入参，FastClass就可以直接定位要调用的方法直接进行调用，这样省去了反射调用，所以调用效率比JDK动态代理通过反射调用高。
  *
  *  FastClass并不是跟代理类一块生成的，而是在第一次执行MethodProxy invoke/invokeSuper时生成的并放在了缓存中。
+ *
+ *  Cglib 生成一个被代理对象的子类来作为代理
  */
 public class Application {
 

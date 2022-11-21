@@ -20,7 +20,7 @@
         <scala.binary.version>2.11</scala.binary.version>
         <jasypt.version>2.1.1</jasypt.version>
         <spring.boot.version>2.1.0.RELEASE</spring.boot.version>
-        <xxl-job.version>2.1.0</xxl-job.version>
+        <xxl-job.version>2.3.1</xxl-job.version>
     </properties>
 
     <dependencyManagement>
